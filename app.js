@@ -31,6 +31,11 @@ const products = [
   {id:30,name:"Cherry",category:"fruits",price:150,description:"Cherry is a small, juicy fruit loved for its sweet-tart flavor and bright, vibrant color.",image:"./res/Fruits/cherry.jpg"},
   {id:31,name:"Kiwi",category:"fruits",price:300,description:"Kiwi is a tangy, nutrient-rich fruit known for its vibrant green flesh and refreshing flavor.",image:"./res/Fruits/kiwi.jpg"},
   {id:32,name:"Aloe Vera",category:"herbs",price:100,description:"Aloe vera is a soothing, succulent plant valued for its healing gel and skin-nourishing benefits.",image:"./res/Herbs/aloevera.jpg"},
+  {id:33,name:"Lemon",category:"fruits",price:5,description: "A fresh, juicy citrus fruit packed with Vitamin C, ideal for making lemonade, adding flavor to dishes, and boosting immunity",image:"./res/Fruits/lemons.jpg"},
+  {id:34,name:"Mango",category:"fruits",price:50,description: "A tropical fruit known for its sweet taste and rich flavor, packed with vitamins A and C, ideal for smoothies, desserts, and fresh eating",image:"./res/Fruits/mangoes.jpg"},
+  {id:35,name:"Lichi",category:"fruits",price:80,description: "A tropical fruit with a sweet, floral flavor and juicy texture, rich in Vitamin C and perfect for desserts, juices, and fresh eating",image:"./res/Fruits/Lichi.jpg"},
+  {id:36,name:"Guava",category:"fruits",price:100,description: "A tropical fruit with a sweet and slightly tangy flavor, rich in fiber, Vitamin C, and antioxidants, perfect for fresh eating or juices",image:"./res/Fruits/Guava.jpg"},
+  {id:37,name:"Blueberry",category:"fruits",price:100,description: "Small, sweet berries rich in antioxidants, vitamins, and fiber, perfect for smoothies, desserts, and healthy snacking",image:"./res/Fruits/Blueberry.jpg"},
 ];
 
 // ------------------- Cart Helpers -------------------
