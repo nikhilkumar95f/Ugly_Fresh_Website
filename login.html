@@ -3,31 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - UglyFresh</title>
+  <title>Login – UglyFresh</title>
+  <meta name="description" content="Log in to your UglyFresh account to buy ugly, fresh produce and help reduce food waste.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="login-wrapper">
+
+    <!-- Left branding panel -->
     <div class="login-left">
       <div class="logo-text">
-        <h1>UglyFresh 🌱</h1>
-        <p>Your go-to app for reducing food waste!</p>
+        <h1>🌱 UglyFresh</h1>
+        <p>Your go-to marketplace for reducing food waste — one imperfect fruit at a time.</p>
+        <div class="login-perks">
+          <div class="perk-item">🥦 Farm-fresh, not factory-perfect</div>
+          <div class="perk-item">💸 Save up to 40% vs regular stores</div>
+          <div class="perk-item">🌍 Every order helps fight food waste</div>
+        </div>
       </div>
     </div>
+
+    <!-- Right login form -->
     <div class="login-right">
       <div class="login-container">
-        <h2>Login</h2>
+        <h2>Welcome back 👋</h2>
         <form id="login-form">
-          <label for="username">Username</label>
-          <input type="text" id="username" required placeholder="Enter username" value="admin">
-          <label for="password">Password</label>
-          <input type="password" id="password" required placeholder="Enter password" value="admin">
-          <button type="submit">Login</button>
+          <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" required placeholder="Enter your username" value="admin" autocomplete="username">
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" required placeholder="Enter your password" value="admin" autocomplete="current-password">
+          </div>
+          <button type="submit" id="login-submit-btn">Login →</button>
         </form>
         <p>Don't have an account? <a href="register.html">Register here</a></p>
       </div>
     </div>
+
   </div>
+
   <script src="app.js"></script>
   <script>
     document.getElementById('login-form').addEventListener('submit', function(event) {
@@ -38,19 +57,19 @@
       if (registeredUser) {
         const userData = JSON.parse(registeredUser);
         if (userData.username === username && userData.password === password) {
-          alert('Login successful! Welcome, ' + username);
           window.location.href = 'index.html';
         } else {
           alert('Invalid username or password!');
         }
       } else {
-        alert('No registered user found. Please register first.');
+        // allow admin/admin for demo
+        if (username === 'admin' && password === 'admin') {
+          window.location.href = 'index.html';
+        } else {
+          alert('No registered user found. Please register first.');
+        }
       }
     });
   </script>
 </body>
-</html><footer>
-  © 2025 UglyFresh | Eat Different. Waste Less.
-</footer>
-
-
+</html>

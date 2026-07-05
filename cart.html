@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Cart - UglyFresh</title>
+  <title>Your Cart – UglyFresh</title>
+  <meta name="description" content="Review your UglyFresh cart and checkout to save money on fresh produce.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,19 +15,23 @@
   <!-- Navbar -->
   <nav>
     <h1>🌱 UglyFresh</h1>
-    <a href="index.html" class="cart-btn">🏠 Home</a>
+    <div class="nav-buttons">
+      <a href="index.html" class="cart-btn">🏠 Home</a>
+      <a href="orders.html" class="cart-btn">📦 Orders</a>
+    </div>
   </nav>
 
-  <!-- Cart Page -->
-  <header>
-    <h2>Your Shopping Cart 🛒</h2>
-  </header>
+  <!-- Cart Hero -->
+  <div class="cart-hero">
+    <h1 class="cart-page-title">🛒 Your Shopping Cart</h1>
+  </div>
 
+  <!-- Cart Content -->
   <main id="cart-page"></main>
 
   <!-- Footer -->
   <footer>
-    © 2025 UglyFresh | Eat Different. Waste Less.
+    © 2025 <strong>UglyFresh</strong> | Eat Different. Waste Less.
   </footer>
 
   <script src="app.js"></script>

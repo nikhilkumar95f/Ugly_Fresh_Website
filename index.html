@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UglyFresh - Ugly Produce Marketplace</title>
+  <title>UglyFresh – Ugly Produce Marketplace</title>
+  <meta name="description" content="Buy ugly, eat fresh, save the planet. Affordable, farm-fresh produce that's perfectly good to eat – just a little imperfect looking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,25 +16,25 @@
   <nav>
     <h1>🌱 UglyFresh</h1>
     <div class="nav-buttons">
-      <input type="text" id="search" placeholder="Search products... 🔍">
-      <a href="orders.html" class="cart-btn">📦 Orders</a>
-      <a href="cart.html" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+      <input type="text" id="search" placeholder="Search products…">
+      <a href="orders.html" class="cart-btn" id="nav-orders-btn">📦 Orders</a>
+      <a href="cart.html" class="cart-btn" id="nav-cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
       <button id="logout-btn" class="cart-btn">Logout</button>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <header>
-    <h2>Buy Ugly, Eat Fresh, Save the Planet 🌍</h2>
-    <p>Affordable, farm-fresh produce that’s perfectly good to eat.</p>
+    <h2>Buy Ugly. Eat Fresh. Save the Planet 🌍</h2>
+    <p>Affordable, farm-fresh produce that's perfectly good to eat — just a little imperfect looking.</p>
   </header>
 
-  <!--category section-->
+  <!-- Category Section -->
   <header class="category-section">
-    <button class="category-btn" data-category="all">All</button>
-    <button class="category-btn" data-category="fruits">Fruits</button>
-    <button class="category-btn" data-category="vegetables">Vegetables</button>
-    <button class="category-btn" data-category="herbs">Herbs</button>
+    <button class="category-btn active" data-category="all">All</button>
+    <button class="category-btn" data-category="fruits">🍎 Fruits</button>
+    <button class="category-btn" data-category="vegetables">🥦 Vegetables</button>
+    <button class="category-btn" data-category="herbs">🌿 Herbs</button>
   </header>
 
   <!-- Products Grid -->
@@ -38,11 +42,9 @@
 
   <!-- Footer -->
   <footer>
-    © 2025 UglyFresh | Eat Different. Waste Less.
+    © 2025 <strong>UglyFresh</strong> | Eat Different. Waste Less.
   </footer>
 
   <script src="app.js"></script>
 </body>
 </html>
-
-
